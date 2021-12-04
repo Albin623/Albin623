@@ -1,7 +1,7 @@
 html{
     height: 100%;
     font-family:'Helvetica';
-    background: url(../Images/cool.jpg) no-repeat center center fixed;
+    background: url(../cool.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
