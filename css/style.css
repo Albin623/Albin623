@@ -1211,3 +1211,27 @@
   width: 100%;
   text-align: center;
 }
+
+p:after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 1s linear infinite alternate;
+}
+
+
+.meta:after{
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
