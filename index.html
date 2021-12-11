@@ -1,56 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Albin Aziri </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Albin Aziri - Official Website" />
+        <meta name="keywords" content="Aziri" />
+        <meta name="author" content="Albin Aziri"/>
 
-<head>
-    <meta charset="utf-8">
-    <title> To-Do List </title>
-    <link rel="stylesheet" type="text/css" href="cssFile.css">
-    <script defer src="javaScript.js"></script>
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 
-<body>
-    <main>
-        <form>
-            <div id="TitleCenter">
-                <h1> To-Do List </h1>
-                <hr>
-                <hr>
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Styling  -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+    <div id="colorlib-blog">
+        <div class="row">
+            <section class="container" style="width: 100%;">
+                <div style=" width: 40%;float: left;margin-left:5%;">
+                    <p style="font-size:42px;font-weight:400;line-height:1.5;"> <a href="">~</a> Albin Aziri </p>
+                    <h3>You can contact me <a href="mailto:albin@aziri.dev">here</a>.</h3>
+            </section>
+        <footer class="footerStick">
+            <hr>
+                <div>
+                    <div style="margin-left: 3.5%; margin-top: 1.5%">
+                        <p>
+                        </p>
+                        <p class="meta"> <span> Albin Aziri <a href=https://github.com/Albin623> @GITLAB</a> <a href=https://gitlab.com/Albin623>@GITHUB</a> </span> </p>
+                    </div>
+                </div>
             </div>
-
-            <p><b> New Task: </b></p>
-            <input type="text" id="task1" name="task" placeholder="Enter the task." required>
-            <p><b> Description: </b></p>
-            <textarea id="desc1" required name="description" rows="5" cols="30"
-                placeholder="Describe the task..."></textarea>
-            <p><b> Importance (0 to 3): </b></p>
-            <input type="range" min="0" max="3" id="imp1" step="1" name="importance">
-            <br>
-            <div id="innerColor">
-                <p id="category"><b> [CHOOSE CATEGORY] </b></p>
-                <li class="radioButtons">
-                    <label><b>School</b></label>
-                    <label><b>Work</b></label>
-                    <label><b>Personal</b></label>
-                </li>
-                <li class="radioButtons">
-                    <input type="radio" checked name="radio" id="rbtn1" value="School">
-                    <input type="radio" name="radio" id="rbtn2" value="Work">
-                    <input type="radio" name="radio" id="rbtn3" value="Personal">
-                </li>
-                <br>
-            </div>
-            <br>
-            <div class="submitButton">
-                <button type="submit" id="createtask"> <b>Post</b> </button>
-            </div>
-        </form>
-        <br>
-        <section id="sectionAppend">
-        </section>
-    </main>
-    <footer id='footerID'>
-        <p><b> </b></p>
-    </footer>
-</body>
-
-</html>
+        </footer>
+    </body>
+<html>
