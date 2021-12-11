@@ -17,11 +17,13 @@
     font-size: 20px;
     background: linear-gradient(-45deg,#462855, #2f2055, #29286A);
     background-size: 250%;
+    background-repeat: no-repeat;
     font-weight: 300;
     letter-spacing: 1px;
     color: 	#b064a9; 
     animation: bg-animation 6s infinite alternate;
     animation-delay: 1000ms;
+    overflow: hidden
   }
     body.menu-show {
       overflow: hidden;
