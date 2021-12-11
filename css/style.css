@@ -1222,7 +1222,6 @@ p:after {
   animation: blink 1s linear infinite alternate;
 }
 
-
 .meta:after{
   animation: none;
 }
