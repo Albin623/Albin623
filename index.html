@@ -197,12 +197,12 @@
 
             <script>
                 window.ub.hooks.afterFormSubmit.push(function() {
-                    const $email = document.querySelector('#email');
-                    const $phone = document.querySelector('#phone_number');
-                    const $fullName = document.querySelector('#full_name');
-                    const $firstName = document.querySelector('#first_name');
-                    const $lastName = document.querySelector('#last_name');
-                    let fullName = null;
+                    var $email = document.querySelector('#email');
+                    var $phone = document.querySelector('#phone_number');
+                    var $fullName = document.querySelector('#full_name');
+                    var $firstName = document.querySelector('#first_name');
+                    var $lastName = document.querySelector('#last_name');
+                    var fullName = null;
 
                     if ($fullName && $fullName.value) {
                         fullName = $fullName.value;
@@ -214,14 +214,14 @@
                         }
                     }
                    
-                    const info = {
+                    var info = {
                         'email': $email ? $email.value : null,
                         'phone': $phone ? $phone.value : null,
                         'full_name': fullName
                     };
                 
                     if (info.email || info.phone || info.full_name) {
-                        const event = new CustomEvent('formSubmission', { detail: info });
+                        var event = new CustomEvent('formSubmission', { detail: info });
                         document.dispatchEvent(event);
                     }
                 });
