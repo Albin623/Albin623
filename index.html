@@ -1,46 +1,79 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Albin Aziri - Official Website" />
-        <meta name="keywords" content="HTML/CSS/JS" />
-        <meta name="author" content="Albin Aziri"/>
-        
-        <!-- Icon -->
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="css/icomoon.css">
-        <!-- Bootstrap  -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <!-- Styling  -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <title> Albin Aziri </title>
-    </head>
-
-    <body>
-        <div id="colorlib-blog">
-            <div class="row">
-                <section class="container" style="width: 100%;">
-                    <div style=" width: 40%;float: left;margin-left:5%;">
-                        <p class="para"> <a href="">~/</a> Albin Aziri</p>
-                        <h3>You can contact me <a href="mailto:albin@aziri.dev">here</a>.</h3>
-                    </div>
-                </section>
-            </div>
-            <footer class="footerStick">
-                <hr>
-                    <div>
-                        <div style="margin-left: 3.5%; margin-top: 1.5%">
-                            <p class="meta"> <span> Albin Aziri <a href=https://github.com/Albin623><span class="icon-gitlab"></span></a> <a href=https://gitlab.com/Albin623> <span class="icon-github"></span></a> </span> </p>
-                        </div>
-                    </div>
+<!DOCTYPE html>
+   <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ET0Q6F5JK"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-4ET0Q6F5JK');
+      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Albin Aziri - Website">
+      <meta name="keywords" content="HTML/CSS/JS">
+      <meta name="author" content="Albin Aziri">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+      <link rel="icon" type="icon" href="/images/favicon.ico">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/icomoon.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://i.icomoon.io/public/temp/2272736644/UntitledProject/style.css">
+      <title> Albin Aziri </title>
+   </head>
+   <body ondragstart="return false;" ondrop="return false;">
+      <div class="page">
+         <header>
+            <a class="header-a" href="index.html">
+               <span class="icon-embed2"></span>
+               <div>Aziri.dev</div>
+            </a>
+            <a class="header-a" href="#" title="resume">Resume</a>
+            <a class="header-a" href="#" title="about">About</a>
+            <div class="header-div1"></div>
+            <button id="cycle">
+            <span class="icon-equalizer"></span>
+            </button>
+         </header>
+         <main>
+            <section class="content1">
+               <div>
+                  <p class="blink">Albin Aziri</p>
+                  <br>
+                   <button class="main-btn">
+                    <a class="link-a" href="mailto:name@email.com" title="contact" mail:>Contact me</a>
+                   </button>
+               </div>
+            </section>
+            <section class="content2">
+            </section>
+         </main>
+         <div class="footer-wrapping">
+            <footer>
+               <div class="footer-div1">
+                  <a href="https://www.youtube.com/watch?v=i3vngxQSVpk&list=LL&index=40"><span class="icon-embed2"></span></a>
+                  <a href=https://github.com/Albin623><span class="icon-gitlab" title="Gitlab"></span></a>
+                  <a href=https://gitlab.com/Albin623><span class="icon-github" title="Github"></span></a>
+               </div>
+               <div class="footer-div2">
+                  <a class="link-a" href="index.html">@Albin623</a>
+                  <div class="space-div"></div>
+                  <div class="footer-cr">&#169; 2023 Albin Aziri</div>
+               </div>
             </footer>
-        </div>
-    </body>
-<html>
+         </div>
+         <script>
+            document.getElementById("cycle").addEventListener("click", function (e) {
+                var target = e.target;
+                if(e.target.classList == "icon-equalizer"){
+                    target.classList.replace("icon-equalizer", "icon-equalizer2");
+                }else{
+                    target.classList.replace("icon-equalizer2", "icon-equalizer");
+                }
+            }, false);
+         </script>
+      </div>
+   </body>
+</html>
