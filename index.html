@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
    <head>
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XV6N2R22V"></script>
@@ -11,70 +12,92 @@
       </script> 
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Albin Aziri - Website">
-      <meta name="keywords" content="HTML/CSS/JS">
+      <meta name="description" content="Albin Aziri's Portfolio">
       <meta name="author" content="Albin Aziri">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-      <link rel="icon" type="icon" href="/images/favicon.ico">
-      <link rel="stylesheet" href="css/animate.css">
+      <link rel="icon" type="icon" href="images/favicon.ico"><link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/icomoon.css">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://i.icomoon.io/public/temp/2272736644/UntitledProject/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <title> Albin Aziri </title>
    </head>
-   <body ondragstart="return false;" ondrop="return false;">
-      <div class="page">
+   <body ondragstart="return false;" ondrop="return false;" class="lightmode">
          <header>
             <a class="header-a" href="index.html">
-               <span class="icon-embed2"></span>
+               <svg class="nav-icon">
+                  <use xlink:href="fonts/SVG/sprite.svg#icon-embed2"></use>
+               </svg>
                <div>Aziri.dev</div>
             </a>
             <a class="header-a" href="#" title="resume">Resume</a>
             <a class="header-a" href="#" title="about">About</a>
-            <div class="header-div1"></div>
-            <button id="cycle">
-            <span class="icon-equalizer"></span>
+            <div class="header-div"></div>
+            <button class="color-cycle">
+               <svg>
+                  <use xlink:href="fonts/SVG/sprite.svg#icon-equalizer"></use>
+               </svg>
             </button>
          </header>
-         <main>
-            <section class="content1">
+         <main role="main">
+            <section class="start-content">
                <div>
-                  <p class="blink">Albin Aziri</p>
-                  <br>
+                  <h1 class="blink">Albin Aziri</h1>
                    <button class="main-btn">
-                    <a class="link-a" href="mailto:name@email.com" title="contact" mail:>Contact me</a>
+                    <a class="link-a" href="mailto:site@aziri.dev" title="contact">Contact me</a>
                    </button>
                </div>
             </section>
-            <section class="content2">
+            <section class="end-content">
             </section>
          </main>
-         <div class="footer-wrapping">
-            <footer>
-               <div class="footer-div1">
-                  <a href="https://www.youtube.com/watch?v=i3vngxQSVpk&list=LL&index=40"><span class="icon-embed2"></span></a>
-                  <a href=https://github.com/Albin623><span class="icon-gitlab" title="Gitlab"></span></a>
-                  <a href=https://gitlab.com/Albin623><span class="icon-github" title="Github"></span></a>
+         <footer>
+               <div class="footer-copyright">
+                  <a href="https://www.youtube.com/watch?v=i3vngxQSVpk&list=LL&index=40">
+                     <svg class="footer-icon">
+                        <use xlink:href="fonts/SVG/sprite.svg#icon-embed2"></use>
+                     </svg>
+                  </a>
+                  <a href=https://github.com/Albin623>
+                     <svg class="footer-icon">
+                        <use xlink:href="fonts/SVG/sprite.svg#icon-github"></use>
+                     </svg>
+                  </a>
+                  <a href=https://gitlab.com/Albin623>
+                     <svg class="footer-icon">
+                        <use xlink:href="fonts/SVG/sprite.svg#icon-gitlab"></use>
+                     </svg>
+                  </a>
                </div>
-               <div class="footer-div2">
+               <div class="footer-link">
                   <a class="link-a" href="index.html">@Albin623</a>
-                  <div class="space-div"></div>
+                  <div class="empty-footer"></div>
                   <div class="footer-cr">&#169; 2023 Albin Aziri</div>
                </div>
-            </footer>
-         </div>
-         <script>
-            document.getElementById("cycle").addEventListener("click", function (e) {
-                var target = e.target;
-                if(e.target.classList == "icon-equalizer"){
-                    target.classList.replace("icon-equalizer", "icon-equalizer2");
-                }else{
-                    target.classList.replace("icon-equalizer2", "icon-equalizer");
-                }
-            }, false);
-         </script>
-      </div>
+         </footer>
+      <script>
+         $(".color-cycle").on("click", function(e) {
+         if($(this).find("svg").find("use").attr("xlink:href") == "fonts/SVG/sprite.svg#icon-equalizer"){
+            $(this).find("svg").find("use").attr("xlink:href", "fonts/SVG/sprite.svg#icon-equalizer2");
+            $(this).find("svg").removeClass("icon-light");
+            $(this).find("svg").toggleClass("icon-dark");
+         }else{
+            $(this).find("svg").find("use").attr("xlink:href", "fonts/SVG/sprite.svg#icon-equalizer");
+            $(this).find("svg").removeClass("icon-dark");
+            $(this).find("svg").toggleClass("icon-light");
+            }
+         });
+         $(document).ready(function () {
+            $(".icon-light").click(function () {
+               $("body").toggleClass("dark-mode");
+            });
+         });
+         $(document).ready(function () {
+            $(".icon-dark").click(function () {
+               $("body").toggleClass("light-mode");
+            });
+         });
+      </script>
    </body>
 </html>
